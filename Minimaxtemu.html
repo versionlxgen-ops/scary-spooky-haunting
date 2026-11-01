@@ -1,0 +1,14 @@
+<html>
+<body>
+    <script src="https://js.puter.com/v2/"></script>
+    <script>
+        puter.ai.chat(
+            "Review this code and refactor it into a production-ready Express middleware with proper error handling, input validation, and TypeScript types:\n\napp.post('/users', (req, res) => { db.query('INSERT INTO users SET ?', req.body, (err, result) => { res.json(result) }) })",
+            { model: "minimax/minimax-m2.5" }
+        )
+        .then(response => {
+            puter.print(response, {code: true});
+        });
+    </script>
+</body>
+</html>
